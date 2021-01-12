@@ -1,0 +1,16 @@
+discovery_demo example:
+- hosts: all
+  gather_facts: false
+  #become: true
+  vars:
+     fix_mode: false 
+  tasks:
+    - name: Discovery Clear
+      command: nodediscover clear
+    - name: Discovery Clear
+      command: nodegroupattrib everything discovery.policy=permissive
+    - name: Nodes Rescan
+      command: nodediscover rescan
+    - name: Nodes List
+      command: nodediscover List
+      register: results
