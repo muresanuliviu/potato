@@ -1,4 +1,4 @@
-discovery_demo example:
+---
 - hosts: all
   gather_facts: false
   #become: true
