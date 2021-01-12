@@ -12,5 +12,5 @@
     - name: Nodes Rescan
       command: nodediscover rescan
     - name: Nodes List
-      command: nodediscover List
+      command: nodediscover list
       register: results
