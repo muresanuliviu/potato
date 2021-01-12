@@ -14,3 +14,4 @@
     - name: Nodes List
       command: nodediscover list
       register: results
+    - debug: msg="{{ results.stdout }}"
